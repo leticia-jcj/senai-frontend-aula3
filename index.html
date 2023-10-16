@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulários</title>
+     <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+     <!-- action para onde os dados sao enviados | method como são enviados -->
+     <!-- id itentifica a tag como unica, usada para validação com js -->
+     <!-- for do label serve para mapear o campo input -->
+     <!-- requerid campo obrigstorio | max/minlength destemina o tamanho-->
+
+     <h1 id="titulo">Cadastro Social</h1>
+     <form action="#" method="POST">
+          <div>
+               <label for="nome" class="cor_texto">Nome</label>
+               <input type="text" name="nome" id="nome" required maxlength="100" class="bold">
+          </div>
+
+          <div>
+               <label for="email" class="cor_texto">E-mail</label>
+               <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+          </div>
+
+          <div>
+               <label for="telefone" class="cor_texto">Telefone</label>
+               <input type="text" name="telefone" id="telefone" placeholder="(61) 90000-0000">
+          </div>
+
+          <div>
+               <label for="cpf" class="cor_texto">CPF</label>
+               <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+          </div>
+
+          <div>
+               <label for="data_nasc" class="cor_texto">Data de Nascimento</label>
+               <input type="date" name="data_nasc" id="data_nasc">
+          </div>
+
+          <div>
+               <label for="vc" class="cor_texto">Sobre Você</label>
+               <textarea name="texto_area" id="vc" cols="30" rows="10"></textarea>
+          </div>
+
+          <div>
+               <input type="submit" value="enviar" id="botao">
+          </div>
+     </form>
+</body>
+
+</html>
